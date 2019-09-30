@@ -27,6 +27,7 @@ Sortie attendue:
 */
 
 function filterOffensiveComments(comments, bannedWords) {
+  return comments.filter(goodString => !bannedWords.some(word => goodString.toLowerCase().includes(word)));
 }
 
 // Ne pas modifier l'export
