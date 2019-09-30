@@ -24,6 +24,13 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  const starks = names.filter(fullName => {
+    const lastName = fullName.split(' ');
+    if (lastName[1] === 'Stark') {
+      return fullName;
+    }
+  })
+  return starks;
 }
 
 // Ne pas modifier l'export

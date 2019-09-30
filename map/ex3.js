@@ -73,7 +73,5 @@ function getMoviesFreshness(movies) {
   return movieLabeled;
 }
 
-
-
 // Ne pas modifier l'export
 module.exports = getMoviesFreshness;
